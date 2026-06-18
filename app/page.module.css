@@ -1,0 +1,13 @@
+.intro {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 0.5rem;
+}
+
+.tagline {
+  font-size: 0.7rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+}
