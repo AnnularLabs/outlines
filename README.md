@@ -2,9 +2,11 @@
   <img src="public/preview.png" width="900" alt="Outlines preview — gallery grid with lightbox and EXIF panel" />
 </p>
 
-<h1 align="center">Outlines</h1>  
-<br/>
+# <p align="center">Outlines</p>
 
+<p align="center">
+  <em>Stripping away the noise. Where the light ends, the story begins.</em>
+</p>
 
 ## License
 
