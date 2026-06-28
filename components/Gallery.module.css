@@ -21,6 +21,14 @@
   }
 }
 
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 0.75rem 0.75rem 1.75rem;
+  }
+}
+
 /* ─── Grid Item ─────────────────────────────────────────────── */
 
 .item {
@@ -66,6 +74,17 @@
 .item:hover .overlay { opacity: 1; }
 .item:hover .img,
 .item:hover .placeholder { transform: scale(1.04); }
+
+@media (hover: none) {
+  .overlay {
+    opacity: 1;
+  }
+
+  .item:hover .img,
+  .item:hover .placeholder {
+    transform: none;
+  }
+}
 
 .overlayMeta {
   font-size: 0.6rem;
@@ -215,7 +234,50 @@
 /* ─── Responsive: stack on mobile ───────────────────────────── */
 
 @media (max-width: 768px) {
-  .lightbox { flex-direction: column; }
-  .lbStage  { flex: 0 0 55vh; }
-  .lbHint   { display: none; }
+  .lightbox {
+    flex-direction: column;
+    background: #0d0d0d;
+  }
+
+  .lbStage {
+    flex: 0 0 55dvh;
+    min-height: 0;
+  }
+
+  .lbBar {
+    padding: calc(0.75rem + env(safe-area-inset-top)) 1rem 0.75rem;
+  }
+
+  .lbClose {
+    min-width: 40px;
+    min-height: 40px;
+    margin-left: auto;
+    padding: 0;
+    font-size: 1.75rem;
+  }
+
+  .lbNav {
+    min-width: 44px;
+    min-height: 56px;
+    padding: 0;
+    font-size: 2.25rem;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .lbImgWrap {
+    width: 100%;
+    max-width: calc(100vw - 48px);
+    max-height: calc(55dvh - 56px);
+  }
+
+  .lbImg {
+    max-height: calc(55dvh - 56px);
+  }
+
+  .lbSkeleton,
+  .lbPlaceholder {
+    width: calc(100vw - 48px);
+    height: calc(55dvh - 80px);
+    max-width: none;
+  }
 }
