@@ -1,8 +1,7 @@
 import type { Work } from "@/lib/types";
 
 export const works: Work[] = [
-  { id: "dalian-threshold", image: "/photos/DSC_1391.JPG", year: "2025" },
-  { id: "hk", image: "/photos/DSC_2265.JPG", year: "2026" },
+  { id: "0711_1", image: "/photos/DSC_0697.jpg", year: "2026" },
   { id: "0620_1", image: "/photos/DSC_0060.JPG", year: "2026" },
   { id: "0620_2", image: "/photos/DSC_0082.JPG", year: "2026" },
   { id: "0620_3", image: "/photos/DSC_0243.JPG", year: "2026" },
@@ -14,4 +13,6 @@ export const works: Work[] = [
   { id: "0620_9", image: "/photos/DSC_0492.JPG", year: "2026" },
   { id: "0326_1", image: "/photos/DSC_2536.JPG", year: "2026" },
   { id: "0219_1", image: "/photos/DSC_2225.JPG", year: "2026" },
+  { id: "hk", image: "/photos/DSC_2265.JPG", year: "2026" },
+  { id: "dalian-threshold", image: "/photos/DSC_1391.JPG", year: "2025" },
 ];
