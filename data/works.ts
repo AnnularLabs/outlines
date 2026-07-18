@@ -6,6 +6,7 @@ export const works: Work[] = [
   { id: "0711_3", image: "/photos/DSC_0597.jpg", year: "2026" },
   { id: "0711_4", image: "/photos/DSC_0632.jpg", year: "2026" },
   { id: "0711_5", image: "/photos/DSC_0697.jpg", year: "2026" },
+  { id: "0711_6", image: "/photos/DSC_0615.jpg", year: "2026" },
   { id: "0620_1", image: "/photos/DSC_0060.JPG", year: "2026" },
   { id: "0620_2", image: "/photos/DSC_0082.JPG", year: "2026" },
   { id: "0620_3", image: "/photos/DSC_0243.JPG", year: "2026" },
