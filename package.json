@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:mobile": "node scripts/verify-mobile-css.mjs"
+    "test:mobile": "node scripts/verify-mobile-css.mjs",
+    "images:generate": "bash scripts/generate-thumbnails.sh"
   },
   "dependencies": {
     "exifr": "^7.1.3",

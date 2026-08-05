@@ -6,41 +6,26 @@ import type { Work } from "@/lib/types";
 import { PhotoPanel } from "./PhotoPanel";
 import styles from "./Gallery.module.css";
 
-/* ─── Thumbnail compression ────────────────────────────────── */
-
-const thumbCache = new Map<string, string>();
-
-function useThumb(src: string, thumbWidth = 600, quality = 0.65) {
-  const [thumb, setThumb] = useState<string>(() => thumbCache.get(src) ?? "");
-  useEffect(() => {
-    if (!src) return;
-    if (thumbCache.has(src)) { setThumb(thumbCache.get(src)!); return; }
-    const img = new Image();
-    img.onload = () => {
-      const canvas = document.createElement("canvas");
-      const ratio = img.naturalHeight / img.naturalWidth;
-      canvas.width = thumbWidth;
-      canvas.height = Math.round(thumbWidth * ratio);
-      const ctx = canvas.getContext("2d");
-      if (!ctx) return;
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-      const dataUrl = canvas.toDataURL("image/jpeg", quality);
-      thumbCache.set(src, dataUrl);
-      setThumb(dataUrl);
-    };
-    img.src = src;
-  }, [src, thumbWidth, quality]);
-  return thumb || src;
-}
-
 /* ─── Grid cell ─────────────────────────────────────────────── */
 
-function GridItem({ work, onClick }: { work: Work; onClick: () => void }) {
-  const thumb = useThumb(work.image);
+function GridItem({ work, onClick, priority }: {
+  work: Work;
+  onClick: () => void;
+  priority: boolean;
+}) {
   return (
     <button className={styles.item} onClick={onClick} aria-label={work.id}>
       {work.image ? (
-        <img src={thumb} alt={work.id} className={styles.img} loading="lazy" decoding="async" />
+        <img
+          src={work.thumbnails.medium}
+          srcSet={`${work.thumbnails.small} 320w, ${work.thumbnails.medium} 640w, ${work.thumbnails.large} 960w`}
+          sizes="(max-width: 480px) calc(100vw - 24px), (max-width: 600px) 50vw, (max-width: 960px) 33vw, 275px"
+          alt={work.id}
+          className={styles.img}
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : "auto"}
+          decoding="async"
+        />
       ) : (
         <div className={styles.placeholder} />
       )}
@@ -143,7 +128,12 @@ export function Gallery() {
     <>
       <div className={styles.grid}>
         {works.map((work, i) => (
-          <GridItem key={work.id} work={work} onClick={() => open(i)} />
+          <GridItem
+            key={work.id}
+            work={work}
+            onClick={() => open(i)}
+            priority={i < 4}
+          />
         ))}
       </div>
       {activeIdx !== null && (
