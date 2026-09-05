@@ -18,6 +18,8 @@ function createWork(id: string, image: string, year: string): Work {
 }
 
 export const works: Work[] = [
+  createWork("0901_1", "/photos/DSC_1362.jpg", "2026"),
+  createWork("0901_2", "/photos/DSC_1380.jpg", "2026"),
   createWork("0711_1", "/photos/DSC_0560.jpg", "2026"),
   createWork("0711_2", "/photos/DSC_0571.jpg", "2026"),
   createWork("0711_3", "/photos/DSC_0597.jpg", "2026"),
