@@ -1,0 +1,5 @@
+{
+  "visual_qa": "pass",
+  "reviewer": "final_qa independent worker",
+  "note": "All standard rows and 16 directions pass. Corrected left row all 8 frames free of fragments; right row clean. Similar upper-left neighbors and bow boundary accepted."
+}

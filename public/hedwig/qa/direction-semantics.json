@@ -1,0 +1,151 @@
+{
+  "ok": true,
+  "reviewer": "final_qa independent worker",
+  "directions": [
+    {
+      "degree": "000",
+      "expected": "up",
+      "verdict": "pass",
+      "observed": "Centered upward head pitch",
+      "reason": "Both eyes and beak rise; chin extends and crown recedes.",
+      "horizontal": "centered",
+      "vertical": "raised"
+    },
+    {
+      "degree": "022.5",
+      "expected": "up-right",
+      "verdict": "pass",
+      "observed": "Upward right turn",
+      "reason": "Beak shifts right and rises; far facial disk narrows.",
+      "horizontal": "right",
+      "vertical": "up"
+    },
+    {
+      "degree": "045",
+      "expected": "up-right",
+      "verdict": "pass",
+      "observed": "Right yaw with upward pitch",
+      "reason": "Near facial disk dominates while beak remains raised.",
+      "horizontal": "right",
+      "vertical": "up"
+    },
+    {
+      "degree": "067.5",
+      "expected": "up-right",
+      "verdict": "pass",
+      "observed": "Strong right turn with slight upward pitch",
+      "reason": "Far eye is occluded and beak angles slightly upward.",
+      "horizontal": "right",
+      "vertical": "up"
+    },
+    {
+      "degree": "090",
+      "expected": "right",
+      "verdict": "pass",
+      "observed": "Level right profile",
+      "reason": "Visible eye and beak face screen-right with level pitch.",
+      "horizontal": "right",
+      "vertical": "level"
+    },
+    {
+      "degree": "112.5",
+      "expected": "down-right",
+      "verdict": "pass",
+      "observed": "Right turn with lowered face",
+      "reason": "Right-pointing beak drops and crown becomes more visible.",
+      "horizontal": "right",
+      "vertical": "down"
+    },
+    {
+      "degree": "135",
+      "expected": "down-right",
+      "verdict": "pass",
+      "observed": "Downward right bow",
+      "reason": "Eye and beak remain rightward beneath exposed crown.",
+      "horizontal": "right",
+      "vertical": "down"
+    },
+    {
+      "degree": "157.5",
+      "expected": "down-right",
+      "verdict": "pass",
+      "observed": "Deep bow retaining right yaw",
+      "reason": "Face is low near right shoulder with pronounced crown exposure.",
+      "horizontal": "right",
+      "vertical": "down"
+    },
+    {
+      "degree": "180",
+      "expected": "down",
+      "verdict": "pass",
+      "observed": "Centered downward bow",
+      "horizontal": "centered",
+      "vertical": "down",
+      "reason": "Symmetric eyes sit beneath broad crown; beak points down centrally."
+    },
+    {
+      "degree": "202.5",
+      "expected": "down-left",
+      "verdict": "pass",
+      "observed": "Leftward downward bow",
+      "horizontal": "left",
+      "vertical": "down",
+      "reason": "Beak and visible facial disk move left beneath exposed crown."
+    },
+    {
+      "degree": "225",
+      "expected": "down-left",
+      "verdict": "pass",
+      "observed": "Down-left head turn",
+      "horizontal": "left",
+      "vertical": "down",
+      "reason": "Leftward face remains pitched down with crown visible."
+    },
+    {
+      "degree": "247.5",
+      "expected": "down-left",
+      "verdict": "pass",
+      "observed": "Left profile with mild downward pitch",
+      "horizontal": "left",
+      "vertical": "slight down",
+      "reason": "Beak faces left below its level-profile position."
+    },
+    {
+      "degree": "270",
+      "expected": "left",
+      "verdict": "pass",
+      "observed": "Level left profile",
+      "horizontal": "left",
+      "vertical": "level",
+      "reason": "Near eye and projecting beak face left; crown and chin balance."
+    },
+    {
+      "degree": "292.5",
+      "expected": "up-left",
+      "verdict": "pass",
+      "observed": "Left profile with upward pitch",
+      "horizontal": "left",
+      "vertical": "up",
+      "reason": "Left-facing beak lifts with eye and chin."
+    },
+    {
+      "degree": "315",
+      "expected": "up-left",
+      "verdict": "pass",
+      "observed": "Upward left turn",
+      "horizontal": "left",
+      "vertical": "up",
+      "reason": "Beak stays left while facial disk and eye tilt upward."
+    },
+    {
+      "degree": "337.5",
+      "expected": "up-left",
+      "verdict": "pass",
+      "observed": "Upward left turn close to preceding pose",
+      "horizontal": "left",
+      "vertical": "up",
+      "reason": "Leftward beak and elevated face retain correct quadrant despite subtle intermediate distinction."
+    }
+  ],
+  "continuity": "Independent final QA: stable torso/feet/neutral scale; 157.5->180 noticeable head silhouette change but no reversal or wrong quadrant; 315/337.5 similarity acceptable; y201 holes are toe/foot gaps."
+}

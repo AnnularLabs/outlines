@@ -1,0 +1,50 @@
+.pet {
+  position: fixed;
+  z-index: 40;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: grab;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.18));
+  transition: filter 0.2s ease;
+}
+
+.pet:hover {
+  filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.24));
+}
+
+.pet:focus-visible {
+  outline: 2px solid var(--text-secondary);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+.dragging {
+  cursor: grabbing;
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.28));
+}
+
+.sprite {
+  display: block;
+  background-repeat: no-repeat;
+  image-rendering: auto;
+  pointer-events: none;
+}
+
+@media (max-width: 720px) {
+  .pet {
+    cursor: pointer;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pet {
+    transition: none;
+  }
+}

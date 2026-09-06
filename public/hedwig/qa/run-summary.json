@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "spriteVersionNumber": 2,
+  "package": "/Users/merrick/.codex/pets/hedwig",
+  "output": "/Users/merrick/Documents/Codex/2026-09-06/hatch-pet-users-merrick-codex-skills/outputs/hedwig",
+  "validation": "/Users/merrick/Documents/Codex/2026-09-06/hatch-pet-users-merrick-codex-skills/outputs/hedwig/qa/validation-extended.json",
+  "direction_semantics": "/Users/merrick/Documents/Codex/2026-09-06/hatch-pet-users-merrick-codex-skills/outputs/hedwig/qa/direction-semantics.json",
+  "blind_direction_validation": "/Users/merrick/Documents/Codex/2026-09-06/hatch-pet-users-merrick-codex-skills/outputs/hedwig/qa/direction-blind-validation.json",
+  "completed_at": "2026-09-06T07:40:58.571024+00:00",
+  "repairs": [
+    "failed row scale, spacing and animation repaired",
+    "row10 corrected screen-left direction",
+    "running-left rederived from registered approved right row"
+  ],
+  "visual_qa": "pass"
+}

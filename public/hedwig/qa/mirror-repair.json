@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "source": "approved cleaned atlas row1",
+  "method": "bundled mirror_strip_preserving_frame_order on normalized 192x208 cells",
+  "target": "row2 only",
+  "reason": "raw equal-slot mirror sliced uneven source poses, creating fragments",
+  "chroma": "No additional despill; copies already-clean pixels, preserves alpha",
+  "review_pending": true
+}

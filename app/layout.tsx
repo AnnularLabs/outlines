@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ThemeScript } from "@/components/ThemeScript";
+import { HedwigPet } from "@/components/HedwigPet";
 
 export const metadata: Metadata = {
   title: "Outlines",
@@ -37,6 +38,7 @@ export default function RootLayout({
           <main className="layout-main">{children}</main>
           <Footer />
         </div>
+        <HedwigPet />
       </body>
     </html>
   );
